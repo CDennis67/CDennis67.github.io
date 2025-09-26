@@ -1,0 +1,18 @@
+html {
+    background: linen;
+}
+
+body {
+    display: flex;
+    max-width: 1200px;
+    color: #644765;
+    background: wheat;
+    border: lightcoral solid 10px;
+    padding: 30px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+p {
+    max-width: 800px;
+}

@@ -1,0 +1,167 @@
+html {
+    background-color: linen;
+}
+
+body {
+    font-family: monospace;
+    background-color: lemonchiffon;
+    color: darkslategrey;
+    background-image: radial-gradient(linen, lemonchiffon);
+    border: 5px solid darksalmon;
+    border-radius: 20px;
+    padding: 20px;
+}
+h1 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+h2 {
+    font-weight: normal;
+    font-size: clamp(1.25rem, 1.75vw, 2rem);
+}
+
+p{
+    font-size: clamp(1rem, 1.5vw, 1.75rem);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    height: 100dvh;
+    padding: 3rem;
+}
+.contact-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 3em auto;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center; 
+    max-width: 1200px;
+}
+
+.picture {
+    width: 75%;
+    height: auto;
+    max-width: 300px;
+    min-width: 150px;
+    border: 3px solid darksalmon;
+    border-radius: 50%;
+    margin: 2rem;
+
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10%
+}
+
+.contact{
+    margin: .5rem;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.work{
+    border-radius: 10px;
+    text-wrap: wrap;
+    margin: .5rem;
+    align-content: center;
+}
+
+.about {
+    justify-items: center;
+}
+
+.goals, .projects, .hobbies, .trivia {
+    background-image:-moz-linear-gradient(lightsalmon, lemonchiffon);
+    border: darkslategrey 2px solid;
+    justify-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 0px;
+    padding: 10px;
+    width: 100%;
+}
+
+.goals h2, .projects h2, .hobbies h2, .trivia h2 {
+    background-color: lightsalmon;
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    font-size: 2em;    
+}
+
+.goal-list, .project-list, .hobby-list, .trivia-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.goal-list li, .project-list li, .hobby-list li, .trivia-list li{
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+.links {
+    padding: 15px;
+    margin: 15px;
+    justify-items: center;
+}
+
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .contact-info{
+        flex-direction: row;
+    }
+
+    .contact, .work {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body {
+        height: 98%
+    }
+    .contact-info{
+        flex-direction: column;
+    }
+
+    .contact, .work {
+        width: 90%;
+    }
+
+    .picture {
+        width: 40%;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .goals, .projects, .hobbies, .trivia {
+        width: 90%;
+    }
+}
